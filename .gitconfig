@@ -1,0 +1,11 @@
+[user]
+	name = zsiegel
+	email = zsiegel87@gmail.com
+[push]
+	default = current
+[pull]
+	rebase = true
+[core]
+	autocrlf = input
+[commit]
+	gpgsign = false

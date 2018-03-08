@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+alias glog='git log --color --graph --pretty=format:"%C(bold red)%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %Cred<%an>%Creset" --abbrev-commit'
+
+alias psgrep="ps aux | grep"
