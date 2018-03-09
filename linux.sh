@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
-export CLOUD_SDK_REPO="cloud-sdk-$(lsb_release -c -s)"
+#Ubuntu 16.04
+export CLOUD_SDK_REPO="cloud-sdk-xenial"
 
 #Google Cloud SDK
 echo "deb http://packages.cloud.google.com/apt $CLOUD_SDK_REPO main" > /etc/apt/sources.list.d/google-cloud-sdk.list
