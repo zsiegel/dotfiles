@@ -40,7 +40,7 @@ apt install -y google-chrome-stable \
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
 echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
 
-apt install sublime-text
+apt install -y sublime-text
 
 apt autoremove
 apt autoclean
