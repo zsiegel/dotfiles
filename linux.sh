@@ -14,6 +14,9 @@ curl https://dl.google.com/linux/linux_signing_key.pub | apt-key add -
 #Kubernetes
 echo "deb http://apt.kubernetes.io/ kubernetes-xenial main"  > /etc/apt/sources.list.d/kubernetes.list
 
+#OBS-Studio
+add-apt-repository ppa:obsproject/obs-studio
+
 apt update 
 apt upgrade -y
 
@@ -35,6 +38,8 @@ apt install -y google-chrome-stable \
 		s3cmd \
 		apt-transport-https \
 		kubectl \
+		ffmpeg \
+		obs-studio \
 
 #Sublime
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
