@@ -1,7 +1,8 @@
+
 export CLICOLOR=1
 
 # http://www.marinamele.com/2014/05/customize-colors-of-your-terminal-in-mac-os-x.html
-LSCOLORS=cxfxcxdxbxegedabagacad
+export LSCOLORS=hxfxcxdxbxegedabagacad
 
 # Add `~/bin` to the `$PATH`
 export PATH="$HOME/bin:$PATH";
