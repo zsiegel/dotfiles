@@ -34,7 +34,6 @@ brew install jq
 brew install mysql
 brew install lua
 brew install go
-brew install clang clang-format
 
 # Remove outdated versions from the cellar.
 brew cleanup
