@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 #Ubuntu 16.04
-export CLOUD_SDK_REPO="cloud-sdk-xenial"
+export CLOUD_SDK_REPO="cloud-sdk-bionic"
 
 #Google Cloud SDK
 echo "deb http://packages.cloud.google.com/apt $CLOUD_SDK_REPO main" > /etc/apt/sources.list.d/google-cloud-sdk.list
@@ -26,12 +26,9 @@ apt upgrade -y
 
 apt install -y google-chrome-stable \
 		dconf-editor \
-		git \
 		openjdk-8-jdk \
 		git \
-		gedit \
 		albert \
-		numlockx \
 		clang \
 		bash-completion \
 		cmake \
