@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# Make vim the default editor.
+# Make sublimes the default editor.
 export EDITOR='subl -n -w'
 
 # Increase Bash history size. Allow 32³ entries; the default is 500.

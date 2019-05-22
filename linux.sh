@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 #Ubuntu 16.04
-export CLOUD_SDK_REPO="cloud-sdk-bionic"
+export CLOUD_SDK_REPO="cloud-sdk-disco"
 
 #Google Cloud SDK
 echo "deb http://packages.cloud.google.com/apt $CLOUD_SDK_REPO main" > /etc/apt/sources.list.d/google-cloud-sdk.list
@@ -25,7 +25,7 @@ apt update
 apt upgrade -y
 
 apt install -y dconf-editor \
-		openjdk-8-jdk \
+		openjdk-12-jdk-headless \
 		git \
 		clang \
 		bash-completion \
