@@ -3,11 +3,19 @@
 # Make sublimes the default editor.
 export EDITOR='subl -n -w'
 
+
+# check the window size after each command and, if necessary,
+# update the values of LINES and COLUMNS.
+shopt -s checkwinsize
 # Increase Bash history size. Allow 32³ entries; the default is 500.
-export HISTSIZE='32768';
-export HISTFILESIZE="${HISTSIZE}";
+HISTSIZE=1000000;
+HISTFILESIZE=1000000;
 # Omit duplicates and commands that begin with a space from history.
-export HISTCONTROL='ignoreboth';
+HISTCONTROL=ignoreboth;
+HISTIGNORE='ls:bg:fg:history'
+HISTTIMEFORMAT='%F %T '
+# Write command right away instead of when the session ends
+PROMPT_COMMAND='history -a'
 
 # Prefer US English and use UTF-8.
 export LANG='en_US.UTF-8';
