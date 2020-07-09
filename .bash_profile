@@ -2,9 +2,6 @@
 export TERM=xterm-color
 export CLICOLOR=1
 
-export LS_OPTS='--color=auto'
-alias ls='ls ${LS_OPTS}'
-
 # http://www.marinamele.com/2014/05/customize-colors-of-your-terminal-in-mac-os-x.html
 export LSCOLORS=hxfxcxdxbxegedabagacad
 
