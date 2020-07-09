@@ -19,21 +19,13 @@ fi;
 
 brew install grep
 brew install git
-brew install gradle
-brew install cmake
-brew install openssl
-brew install pidcat
-brew install s3cmd
-brew install sqlite
-brew install valgrind
 brew install wget
-brew install wrk
+brew install curl
 brew install yarn
-brew install imagemagick
-brew install jq
-brew install mysql
-brew install lua
-brew install go
+brew install fastlane
+brew install bash
+brew tap AdoptOpenJDK/openjdk
+brew cask install adoptopenjdk8 adoptopenjdk12 adoptopenjdk14
 
 # Remove outdated versions from the cellar.
 brew cleanup
