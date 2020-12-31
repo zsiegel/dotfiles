@@ -9,3 +9,10 @@ jdk() {
         export JAVA_HOME=$(/usr/libexec/java_home -v"$version");
         java -version
  }
+
+alias sublime="open -a /Applications/Sublime\ Text.app" 
+
+gcloud-docker-init() {
+	name=$1
+	"docker run -ti --name $name google/cloud-sdk gcloud init"
+}
