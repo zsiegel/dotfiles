@@ -14,10 +14,10 @@ alias sublime="open -a /Applications/Sublime\ Text.app"
 
 gcloud-docker-init() {
 	name=$1
-	docker run -ti --name $name google/cloud-sdk gcloud init
+	docker run -it --name $name google/cloud-sdk gcloud init
 }
 
 gcloud-docker-run() {
 	name=$1
-	docker run -it --volumes-from name -v "$(pwd)":"$(pwd)" -w "$(pwd)" google/cloud-sdk
+	docker run -it --volumes-from $name -v "$(pwd)":"$(pwd)" -w "$(pwd)" google/cloud-sdk
 }
