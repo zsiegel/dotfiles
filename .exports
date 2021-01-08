@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Make sublimes the default editor.
-export EDITOR='subl -n -w'
+export EDITOR='sublime -n -w'
 
 
 # check the window size after each command and, if necessary,
