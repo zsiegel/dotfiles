@@ -17,16 +17,7 @@ if ! fgrep -q '/usr/local/bin/bash' /etc/shells; then
   chsh -s /usr/local/bin/bash;
 fi;
 
-brew install grep
-brew install git
-brew install wget
-brew install curl
-brew install yarn
-brew install fastlane
-brew install bash
-brew tap AdoptOpenJDK/openjdk
-brew cask install adoptopenjdk8 adoptopenjdk12 adoptopenjdk14
-brew install JakeWharton/repo/dockerfile-shebang
+brew install grep git wget curl yarn fastlane JakeWharton/repo/dockerfile-shebang
 
 # Remove outdated versions from the cellar.
 brew cleanup
