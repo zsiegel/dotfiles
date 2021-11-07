@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh
 
 # Install command-line tools using Homebrew.
 
@@ -8,16 +8,7 @@ brew update
 # Upgrade any already-installed formulae.
 brew upgrade
 
-brew install bash
-brew install bash-completion2
-
-# Switch to using brew-installed bash as default shell
-if ! fgrep -q '/usr/local/bin/bash' /etc/shells; then
-  echo '/usr/local/bin/bash' | sudo tee -a /etc/shells;
-  chsh -s /usr/local/bin/bash;
-fi;
-
-brew install grep git wget curl yarn fastlane JakeWharton/repo/dockerfile-shebang
+brew install grep git wget curl fastlane JakeWharton/repo/dockerfile-shebang pyenv openjdk@11
 
 # Remove outdated versions from the cellar.
 brew cleanup

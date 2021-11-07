@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/sh
 
 #Ubuntu 16.04
 export CLOUD_SDK_REPO="cloud-sdk-disco"

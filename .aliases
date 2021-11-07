@@ -1,6 +1,6 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh
 
-alias glog='git log --color --graph --pretty=format:"%C(bold red)%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %Cred<%an>%Creset" --abbrev-commit'
+alias glog="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 
 alias psgrep="ps aux | grep"
 

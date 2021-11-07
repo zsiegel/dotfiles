@@ -1,12 +1,8 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh
 
 # Make sublimes the default editor.
 export EDITOR='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl -n -w'
 
-
-# check the window size after each command and, if necessary,
-# update the values of LINES and COLUMNS.
-shopt -s checkwinsize
 # Increase Bash history size. Allow 32³ entries; the default is 500.
 HISTSIZE=1000000;
 HISTFILESIZE=1000000;
