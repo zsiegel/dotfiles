@@ -2,10 +2,11 @@
 
 case "$(uname -s)" in
     Darwin)
+        echo "Installing mac packages"
         brew install git zsh
     ;;
     Linux)
-        # Install packages
+        echo "Installing linux packages"
         sudo apt-get install -y \
             fonts-powerline \
             zsh        
