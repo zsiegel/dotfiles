@@ -1,9 +1,16 @@
 #!/bin/sh
 
-# Install packages
-sudo apt-get install -y \
-    fonts-powerline \
-    zsh
+case "$(uname -s)" in
+    Darwin)
+        brew install git zsh
+    ;;
+    Linux)
+        # Install packages
+        sudo apt-get install -y \
+            fonts-powerline \
+            zsh        
+    ;;
+esac
 
 # Change Shell
 chsh -s /usr/bin/zsh $USERNAME
