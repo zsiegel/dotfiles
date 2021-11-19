@@ -9,8 +9,7 @@ case "$(uname -s)" in
         echo "Installing linux packages"
         apt-get install -y \
             curl \
-            fonts-powerline \
-            zsh        
+            fonts-powerline
     ;;
 esac
 
