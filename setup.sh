@@ -24,12 +24,3 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 # Change Shell
 chsh -s $(which zsh) $USERNAME
 
-# Move files
-cat .zshrc > $HOME/.zshrc
-cat .zprofile > $HOME/.zprofile
-cat .p10k.zsh > $HOME/.p10k.zsh
-
-cat .aliases > $HOME/.aliases
-cat .exports > $HOME/.exports
-cat .gitignore > $HOME/.gitignore
-cat .gitconfig > $HOME/.gitconfig
