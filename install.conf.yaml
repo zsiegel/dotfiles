@@ -7,7 +7,7 @@
 - link:
     ~/.gitconfig: gitconfig
     ~/.tmux.conf: tmux.conf
-    ~/.p10k.zsh: zsh/.p10k.zsh
+    ~/.p10k.zsh: zsh/p10k.zsh
     ~/.zprofile: zsh/zprofile
     ~/.zshrc: zsh/zshrc
     ~/.aliases: aliases
