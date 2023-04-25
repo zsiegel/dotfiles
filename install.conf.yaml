@@ -1,0 +1,18 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ["~"]
+
+- link:
+    ~/.dotfiles: ""
+    ~/.gitconfig: gitconfig
+    ~/.tmux.conf: tmux.conf
+    ~/.zprofile: zsh/zprofile
+    ~/.zshrc: zsh/zshrc
+    ~/.zgenom: zsh/zgenom
+    ~/.oh-my-zsh: zsh/ohmyzsh
+    ~/.aliases: aliases
+
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]

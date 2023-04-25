@@ -1,11 +1,14 @@
 [user]
 	name = zsiegel
-	email = 304495+zsiegel@users.noreply.github.com
+	email = white.dog3356@fastmail.com
 [push]
 	default = current
 [pull]
 	rebase = true
+	twohead = ort
 [core]
 	autocrlf = input
 [commit]
 	gpgsign = false
+[init]
+	defaultBranch = main

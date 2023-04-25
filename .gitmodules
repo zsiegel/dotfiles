@@ -1,0 +1,10 @@
+[submodule "dotbot"]
+	path = dotbot
+	url = https://github.com/anishathalye/dotbot
+	ignore = dirty
+[submodule "zsh/zgenom"]
+	path = zsh/zgenom
+	url = git@github.com:jandamm/zgenom.git
+[submodule "zsh/ohmyzsh"]
+	path = zsh/ohmyzsh
+	url = git@github.com:ohmyzsh/ohmyzsh.git
