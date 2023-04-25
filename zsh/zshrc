@@ -35,6 +35,8 @@ if ! zgenom saved; then
     zgenom save
 fi
 
+source $DOTFILES/zsh/p10k.zsh
+
 # History Options
 setopt append_history
 setopt extended_history
