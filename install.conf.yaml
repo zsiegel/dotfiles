@@ -10,6 +10,7 @@
     ~/.p10k.zsh: zsh/p10k.zsh
     ~/.zprofile: zsh/zprofile
     ~/.zshrc: zsh/zshrc
+    ~/.zgenom: zsh/zgenom
     ~/.aliases: aliases
 
 - shell:
