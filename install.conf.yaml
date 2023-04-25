@@ -5,12 +5,13 @@
 - clean: ["~"]
 
 - link:
+    ~/.dotfiles: ""
     ~/.gitconfig: gitconfig
     ~/.tmux.conf: tmux.conf
-    ~/.p10k.zsh: zsh/p10k.zsh
     ~/.zprofile: zsh/zprofile
     ~/.zshrc: zsh/zshrc
     ~/.zgenom: zsh/zgenom
+    ~/.oh-my-zsh: zsh/ohmyzsh
     ~/.aliases: aliases
 
 - shell:
