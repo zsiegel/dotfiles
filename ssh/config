@@ -9,3 +9,27 @@ AddKeysToAgent yes
 UseKeychain yes
 PreferredAuthentications publickey
 IdentityFile ~/.ssh/gitlab
+
+Host ztensor
+AddKeysToAgent yes
+UseKeychain yes
+PreferredAuthentications publickey
+IdentityFile ~/.ssh/ztensor
+
+Host node0
+AddKeysToAgent yes
+UseKeychain yes
+PreferredAuthentications publickey
+IdentityFile ~/.ssh/node0
+
+Host node01
+AddKeysToAgent yes
+UseKeychain yes
+PreferredAuthentications publickey
+IdentityFile ~/.ssh/node01
+
+Host node02
+AddKeysToAgent yes
+UseKeychain yes
+PreferredAuthentications publickey
+IdentityFile ~/.ssh/node02
