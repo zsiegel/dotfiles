@@ -1,35 +1,40 @@
+Host *
+    IdentityAgent ~/.1password/agent.sock
+    
+Include ~/.orbstack/ssh/config
+
 Host github.com
-AddKeysToAgent yes
-UseKeychain yes
-PreferredAuthentications publickey
-IdentityFile ~/.ssh/github
+    IdentitiesOnly yes
+    IdentityFile ~/.ssh/github
+    IdentityAgent ~/.1password/agent.sock
 
 Host gitlab.com
-AddKeysToAgent yes
-UseKeychain yes
-PreferredAuthentications publickey
-IdentityFile ~/.ssh/gitlab
+    IdentitiesOnly yes
+    IdentityFile ~/.ssh/gitlab
+    IdentityAgent ~/.1password/agent.sock
 
+Host zstorage
+    IdentitiesOnly yes
+    IdentityFile ~/.ssh/zstorage.pub
+    IdentityAgent ~/.1password/agent.sock
+    
 Host ztensor
-AddKeysToAgent yes
-UseKeychain yes
-PreferredAuthentications publickey
-IdentityFile ~/.ssh/ztensor
-
+    IdentitiesOnly yes
+    IdentityFile ~/.ssh/ztensor.pub
+    IdentityAgent ~/.1password/agent.sock
+    
 Host node0
-AddKeysToAgent yes
-UseKeychain yes
-PreferredAuthentications publickey
-IdentityFile ~/.ssh/node0
-
+    IdentitiesOnly yes
+    IdentityFile ~/.ssh/node0.pub
+    IdentityAgent ~/.1password/agent.sock
+    
 Host node01
-AddKeysToAgent yes
-UseKeychain yes
-PreferredAuthentications publickey
-IdentityFile ~/.ssh/node01
-
+    IdentitiesOnly yes
+    IdentityFile ~/.ssh/node01.pub
+    IdentityAgent ~/.1password/agent.sock
+    
 Host node02
-AddKeysToAgent yes
-UseKeychain yes
-PreferredAuthentications publickey
-IdentityFile ~/.ssh/node02
+    IdentitiesOnly yes
+    IdentityFile ~/.ssh/node02.pub
+    IdentityAgent ~/.1password/agent.sock
+    
