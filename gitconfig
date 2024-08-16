@@ -12,3 +12,5 @@
 	gpgsign = false
 [init]
 	defaultBranch = main
+[alias]
+	pushmr = push -u -o merge_request.create
