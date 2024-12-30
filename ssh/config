@@ -1,40 +1,52 @@
-Host *
-    IdentityAgent ~/.1password/agent.sock
-    
 Include ~/.orbstack/ssh/config
+
+Host *
+    SetEnv TERM=xterm-256color
+    IdentityAgent "~/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock"
+
+    Host hf.co
+    IdentitiesOnly yes
+    IdentityFile ~/.ssh/huggingface.pub
+    IdentityAgent "~/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock"
 
 Host github.com
     IdentitiesOnly yes
-    IdentityFile ~/.ssh/github
-    IdentityAgent ~/.1password/agent.sock
+    IdentityFile ~/.ssh/github.pub
+    IdentityAgent "~/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock"
 
 Host gitlab.com
     IdentitiesOnly yes
-    IdentityFile ~/.ssh/gitlab
-    IdentityAgent ~/.1password/agent.sock
+    IdentityFile ~/.ssh/gitlab.pub
+    IdentityAgent "~/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock"
+
+Host 192.168.11.16
+    IdentitiesOnly yes
+    IdentityFile ~/.ssh/zstorage.pub
+    IdentityAgent "~/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock"
 
 Host zstorage
     IdentitiesOnly yes
     IdentityFile ~/.ssh/zstorage.pub
-    IdentityAgent ~/.1password/agent.sock
+    IdentityAgent "~/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock"
     
 Host ztensor
     IdentitiesOnly yes
     IdentityFile ~/.ssh/ztensor.pub
-    IdentityAgent ~/.1password/agent.sock
+    IdentityAgent "~/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock"
     
 Host node0
     IdentitiesOnly yes
     IdentityFile ~/.ssh/node0.pub
-    IdentityAgent ~/.1password/agent.sock
+    IdentityAgent "~/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock"
     
 Host node01
     IdentitiesOnly yes
     IdentityFile ~/.ssh/node01.pub
-    IdentityAgent ~/.1password/agent.sock
+    IdentityAgent "~/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock"
     
 Host node02
     IdentitiesOnly yes
     IdentityFile ~/.ssh/node02.pub
-    IdentityAgent ~/.1password/agent.sock
-    
+    IdentityAgent "~/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock"
+        
+Include ~/.orbstack/ssh/config

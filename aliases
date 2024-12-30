@@ -1,12 +1,14 @@
 #!/usr/bin/env zsh
 
+alias k8s="kubectl"
+
 alias gitlog="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 
 alias psgrep="ps aux | grep"
 
 jdk() {
         version=$1
-        export JAVA_HOME=$(/usr/libexec/java_home -v"$version");
+        export JAVA_HOME=$(/usr/libexec/java_home -v "$version");
         java -version
  }
 
