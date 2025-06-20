@@ -6,6 +6,18 @@ alias gitlog="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Cres
 
 alias psgrep="ps aux | grep"
 
+llm-ollama() {
+	export OLLAMA_HOST="http://192.168.11.18:11434"
+	llm models default llama3.2:latest
+	echo 'Using ollama:llama3.2 on ztensor'
+}
+
+llm-ollama-local() {
+	export OLLAMA_HOST="http://localhost:11434"
+	llm models default llama3.2:latest
+	echo 'Using ollama:llama3.2 on localhost'
+}
+
 jdk() {
         version=$1
         export JAVA_HOME=$(/usr/libexec/java_home -v "$version");
