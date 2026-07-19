@@ -5,6 +5,14 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+# Some tools (e.g. herdr) spawn NON-login interactive shells, which zsh does not
+# source ~/.zprofile for. Load it here so PATH/brew/ssh-agent/aliases are present.
+# Guarded on `login` so real login shells (which already ran ~/.zprofile) don't
+# double-source it.
+if [[ ! -o login ]] && [[ -r ~/.zprofile ]]; then
+  source ~/.zprofile
+fi
+
 export DOTFILES="$HOME/.dotfiles"
 
 source $DOTFILES/zsh/zgenom/zgenom.zsh
