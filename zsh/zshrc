@@ -17,13 +17,18 @@ export DOTFILES="$HOME/.dotfiles"
 
 source $DOTFILES/zsh/zgenom/zgenom.zsh
 
-# Generate zgen init.sh if it doesn't exist
+# Rebuild caches that still load the deprecated GitHub plugin.
+if [[ -r "$ZGEN_INIT" && "$(<"$ZGEN_INIT")" == *'/plugins/github/'* ]]; then
+    zgenom reset
+fi
+
+# Generate the plugin cache if it does not exist.
 if ! zgenom saved; then
     zgenom ohmyzsh
 
     # Plugins
     zgenom ohmyzsh plugins/git
-    zgenom ohmyzsh plugins/github
+    zgenom ohmyzsh plugins/gh
     zgenom ohmyzsh plugins/sudo
     zgenom ohmyzsh plugins/kubectl
     zgenom ohmyzsh plugins/docker
